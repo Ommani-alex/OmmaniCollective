@@ -12,6 +12,10 @@ body {
   line-height: 1.6;
 }
 
+.padded {
+  padding: 60px 20px;
+}
+
 /* ====== HEADER ====== */
 .site-header {
   background-color: #366B5D;
@@ -64,10 +68,10 @@ nav a:hover {
   color: #E8D8AE;
 }
 
-/* ====== HERO SECTION ====== */
+/* ====== HERO ====== */
 .hero {
   background-color: #CBDCC8;
-  padding: 60px 40px;
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -87,11 +91,11 @@ nav a:hover {
 /* ====== HIGHLIGHT BOXES ====== */
 .highlight-boxes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-  padding: 60px 40px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
   margin: 0 auto 60px;
+  padding: 0 20px;
 }
 
 .highlight {
@@ -127,62 +131,58 @@ nav a:hover {
   grid-column: 1 / -1;
 }
 
-/* ====== PROCESS SECTION ====== */
-.process-section {
-  background-color: #D8E9DA;
-  padding: 60px 20px;
+/* ====== SECTION SPACING ====== */
+.section-heading {
   text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  color: #366B5D;
+  padding-top: 40px;
 }
 
+.section-bg {
+  background-color: #fdfdfb;
+  padding: 60px 20px;
+}
+
+/* ====== PROCESS GRID ====== */
 .process-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
   max-width: 1000px;
-  margin: 40px auto 0;
-  padding: 0 20px;
+  margin: 0 auto;
   text-align: center;
+  padding: 0 20px;
 }
 
 .process-step {
-  background-color: #CBDCC8;
+  background-color: #E8D8AE;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.process-step h3 {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-  color: #366B5D;
-}
-
+.process-step h3,
 .process-step p {
-  font-size: 0.95rem;
   color: #366B5D;
 }
 
-/* ====== TERMS SECTION ====== */
-.terms-section {
-  background-color: #F2F0E9;
-  padding: 60px 20px;
-  text-align: center;
-}
-
+/* ====== TERMS GRID ====== */
 .terms-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
   max-width: 1000px;
-  margin: 40px auto;
+  margin: 0 auto;
   padding: 0 20px;
+  text-align: center;
 }
 
 .terms-card {
   background-color: #CBDCC8;
   padding: 20px;
   border-radius: 10px;
-  text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
 }
 
@@ -216,7 +216,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* ====== BUTTONS (optional future use) ====== */
+/* ====== BUTTONS ====== */
 .button {
   background-color: #5C9F91;
   color: #F2F0E9;
