@@ -87,29 +87,41 @@ nav a:hover {
 
 /* ====== HIGHLIGHT BOXES ====== */
 .highlight-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .highlight {
   background-color: #5C9F91;
-  padding: 24px;
-  border-radius: 8px;
-  width: 300px;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
   color: #F2F0E9;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.highlight:hover {
+  transform: translateY(-4px);
 }
 
 .highlight h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
 }
 
-.highlight p {
-  font-size: 0.95rem;
+.highlight p,
+.highlight ul {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.highlight ul {
+  padding-left: 20px;
 }
 
 /* ====== FOOTER ====== */
