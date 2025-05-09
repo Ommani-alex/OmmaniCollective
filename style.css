@@ -16,11 +16,11 @@ body {
 .site-header {
   background-color: #366B5D;
   color: #F2F0E9;
-  padding: 20px 40px;
+  padding: 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
   border-bottom: 4px solid #CBDCC8;
 }
 
@@ -28,72 +28,77 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+  width: 100%;
 }
 
 .logo {
-  height: 70px;
+  height: 60px;
   width: auto;
 }
 
 .site-title h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #F2F0E9;
 }
 
 .site-title .tagline {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #CBDCC8;
 }
 
-nav ul {
+.main-nav ul {
   list-style: none;
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 10px;
 }
 
-nav a {
+.main-nav a {
   text-decoration: none;
   color: #F2F0E9;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-nav a:hover {
+.main-nav a:hover {
   color: #E8D8AE;
 }
 
-/* ====== SECTION WRAPPER ====== */
-section {
-  padding: 60px 20px;
-  margin: 0 auto;
-  max-width: 1200px;
+/* ====== HERO ====== */
+.hero.refined-hero {
+  background-color: #CBDCC8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
 }
 
-/* ====== HERO ====== */
-.hero {
-  background-color: #CBDCC8;
-  padding: 80px 20px;
+.hero-content {
+  background-color: #FDFCF8;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  max-width: 900px;
   text-align: center;
 }
 
-.hero h2 {
+.hero-content h2 {
   font-size: 2.25rem;
+  color: #366B5D;
   margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
   color: #366B5D;
 }
 
-.hero p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.15rem;
-  color: #366B5D;
-}
-
-/* ====== FEATURES ====== */
+/* ====== FEATURES SECTION ====== */
 .features-section {
   background-color: #FDFCF8;
   text-align: center;
+  padding: 60px 20px;
 }
 
 .features-grid {
@@ -142,7 +147,8 @@ section {
   padding: 60px 20px;
 }
 
-.cta-card {
+.cta-card.refined-cta {
+  background-color: #5C9F91;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -200,26 +206,38 @@ footer a:hover {
   color: #366B5D;
 }
 
+/* ====== MEDIA QUERIES ====== */
 @media screen and (max-width: 768px) {
   .site-header {
+    padding: 20px;
+  }
+
+  .logo-title {
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
   }
 
-  .features-grid {
-    grid-template-columns: 1fr;
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
   }
 
-  .hero h2 {
+  .hero-content h2 {
     font-size: 1.75rem;
   }
 
-  .hero p,
+  .hero-content p,
   .cta-card p {
     font-size: 1rem;
   }
 
   .cta-card h2 {
     font-size: 1.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
   }
 }
