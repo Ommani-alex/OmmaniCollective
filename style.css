@@ -10,7 +10,6 @@ body {
   background-color: #F2F0E9;
   color: #366B5D;
   line-height: 1.6;
-  padding: 0;
 }
 
 /* ====== HEADER ====== */
@@ -65,41 +64,35 @@ nav a:hover {
   color: #E8D8AE;
 }
 
-/* ====== MAIN HERO SECTION ====== */
+/* ====== HERO SECTION ====== */
 .hero {
   background-color: #CBDCC8;
-  padding: 40px;
+  padding: 60px 20px;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .hero h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   color: #366B5D;
 }
 
 .hero p {
-  max-width: 800px;
-  margin: 0 auto;
   font-size: 1.1rem;
   color: #366B5D;
-}
-
-.centered-list {
-  list-style-position: inside;
-  text-align: center;
-  padding-left: 0;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 /* ====== HIGHLIGHT BOXES ====== */
 .highlight-boxes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-  padding: 60px 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 80px;
+  padding: 0 20px;
 }
 
 .highlight {
@@ -120,41 +113,38 @@ nav a:hover {
   margin-bottom: 12px;
 }
 
-.highlight p,
 .highlight ul {
   font-size: 1rem;
-  margin-bottom: 10px;
+  padding-left: 20px;
   line-height: 1.5;
 }
 
-.highlight ul {
-  padding-left: 20px;
+.full-width {
+  grid-column: 1 / -1;
 }
+
+/* ====== PROCESS SECTION ====== */
+.process-section {
+  background-color: #E8D8AE;
+  padding: 60px 20px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.process-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 30px;
+  color: #366B5D;
+}
+
 .process-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
   max-width: 1000px;
-  margin: 40px auto 0;
-  padding: 0 20px;
+  margin: 0 auto;
   text-align: center;
 }
-
-/* Ensure highlight boxes are in a responsive grid */
-.highlight-boxes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
-  max-width: 1000px;
-  margin: 0 auto 60px;
-  padding: 0 20px;
-}
-
-/* Make the last box span all columns */
-.full-width {
-  grid-column: 1 / -1;
-}
-
 
 .process-step {
   background-color: #CBDCC8;
@@ -174,18 +164,17 @@ nav a:hover {
   color: #366B5D;
 }
 
-.terms-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 800px;
-  margin: 0 auto;
-  gap: 16px;
-  padding: 20px;
+/* ====== TERMS GRID ====== */
+.terms-section {
+  background-color: #F2F0E9;
+  padding: 60px 20px;
+  margin-bottom: 80px;
   text-align: center;
 }
 
-.terms-grid p {
-  font-size: 1rem;
+.terms-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 30px;
   color: #366B5D;
 }
 
@@ -194,15 +183,14 @@ nav a:hover {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
   max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .terms-card {
   background-color: #CBDCC8;
   padding: 20px;
   border-radius: 10px;
-  text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
 }
 
@@ -216,7 +204,6 @@ nav a:hover {
   font-size: 0.95rem;
   color: #366B5D;
 }
-
 
 /* ====== FOOTER ====== */
 footer {
