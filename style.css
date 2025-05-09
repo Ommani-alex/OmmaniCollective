@@ -67,32 +67,31 @@ nav a:hover {
 /* ====== HERO SECTION ====== */
 .hero {
   background-color: #CBDCC8;
-  padding: 60px 20px;
+  padding: 60px 40px;
   text-align: center;
-  margin-bottom: 60px;
 }
 
 .hero h2 {
   font-size: 2rem;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   color: #366B5D;
 }
 
 .hero p {
-  font-size: 1.1rem;
-  color: #366B5D;
   max-width: 800px;
   margin: 0 auto;
+  font-size: 1.1rem;
+  color: #366B5D;
 }
 
 /* ====== HIGHLIGHT BOXES ====== */
 .highlight-boxes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  padding: 60px 40px;
   max-width: 1200px;
-  margin: 0 auto 80px;
-  padding: 0 20px;
+  margin: 0 auto 60px;
 }
 
 .highlight {
@@ -113,10 +112,15 @@ nav a:hover {
   margin-bottom: 12px;
 }
 
+.highlight p,
 .highlight ul {
   font-size: 1rem;
-  padding-left: 20px;
+  margin-bottom: 10px;
   line-height: 1.5;
+}
+
+.highlight ul {
+  padding-left: 20px;
 }
 
 .full-width {
@@ -125,16 +129,9 @@ nav a:hover {
 
 /* ====== PROCESS SECTION ====== */
 .process-section {
-  background-color: #E8D8AE;
+  background-color: #D8E9DA;
   padding: 60px 20px;
-  margin-bottom: 80px;
   text-align: center;
-}
-
-.process-section h2 {
-  font-size: 1.75rem;
-  margin-bottom: 30px;
-  color: #366B5D;
 }
 
 .process-grid {
@@ -142,7 +139,8 @@ nav a:hover {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 40px auto 0;
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -164,18 +162,11 @@ nav a:hover {
   color: #366B5D;
 }
 
-/* ====== TERMS GRID ====== */
+/* ====== TERMS SECTION ====== */
 .terms-section {
   background-color: #F2F0E9;
   padding: 60px 20px;
-  margin-bottom: 80px;
   text-align: center;
-}
-
-.terms-section h2 {
-  font-size: 1.75rem;
-  margin-bottom: 30px;
-  color: #366B5D;
 }
 
 .terms-grid {
@@ -183,14 +174,15 @@ nav a:hover {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
   max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 .terms-card {
   background-color: #CBDCC8;
   padding: 20px;
   border-radius: 10px;
+  text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
 }
 
