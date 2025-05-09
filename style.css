@@ -213,3 +213,50 @@ footer a:hover {
 .button:hover {
   background-color: #366B5D;
 }
+
+/* ====== FEATURES ====== */
+
+.features-section {
+  padding: 60px 20px;
+  background-color: #FDFCF8;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+
+.feature-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+.feature-icon {
+  width: 64px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  color: #366B5D;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
