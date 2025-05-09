@@ -5,182 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Logo Design Services | Ommani Collective</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      background-color: #fdfdfb;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #3e4a3f;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 15px 30px;
-      flex-wrap: wrap;
-    }
-    .logo-title {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-    .logo-title img {
-      max-height: 70px;
-      border-radius: 8px;
-    }
-    .site-name {
-      font-size: 1.8em;
-      color: white;
-      font-weight: bold;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      margin: 0;
-      padding: 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h1, h2 {
-      color: #3e4a3f;
-    }
-    .section {
-      background-color: #eaf5f2;
-      padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-    }
-    .pricing-table {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    .pricing-card {
-      background: #d8f3ea;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .pricing-card h3 {
-      margin-top: 0;
-      color: #3e4a3f;
-    }
-    footer {
-      background-color: #3e4a3f;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.95em;
-    }
-    footer a {
-      color: #fff785;
-      text-decoration: none;
-    }
-  </style>
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <div class="logo-title">
-      <img src="logo.png" alt="Ommani Collective Logo" class="logo">
-      <span class="site-name">Ommani Collective</span>
+      <img src="Logos/logo.png" alt="Ommani Collective Logo" class="logo">
+      <div class="site-title">
+        <h1>Ommani Collective</h1>
+        <p class="tagline">Built for change. Powered by purpose.</p>
+      </div>
     </div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="web_design.html">Services</a></li>
+        <li><a href="web_design.html">Web Design</a></li>
         <li><a href="domain_services.html">Domain Setup</a></li>
         <li><a href="logo_design.html">Logo Design</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Logo Design Services</h1>
-    <p>Whether you're starting a business, refreshing your brand, or launching a new digital product, Ommani Collective offers logo design services that are modern, flexible, and aligned with your vision.</p>
+    <section class="hero">
+      <h2>Logo Design Services</h2>
+      <p>Modern, adaptable logos crafted for clarity, identity, and intention.</p>
+    </section>
 
-    <div class="section">
-      <h2>Packages & Pricing</h2>
-      <div class="pricing-table">
-        <div class="pricing-card">
-          <h3>Starter Logo Package</h3>
-          <p>$100+</p>
-          <ul>
-            <li>One custom logo concept</li>
-            <li>Font and color suggestions</li>
-            <li>1 revision</li>
-            <li>Files: PNG, JPG</li>
-          </ul>
-        </div>
-        <div class="pricing-card">
-          <h3>Pro Logo Package</h3>
-          <p>$200+</p>
-          <ul>
-            <li>2–3 logo concepts</li>
-            <li>Up to 3 revisions</li>
-            <li>Color palette & font guide</li>
-            <li>Files: PNG, JPG, SVG</li>
-          </ul>
-        </div>
-        <div class="pricing-card">
-          <h3>Brand Kit Add-On</h3>
-          <p>$100</p>
-          <ul>
-            <li>Social icons (profile + header)</li>
-            <li>Favicon design</li>
-            <li>Mini brand guidelines</li>
-            <li>Includes transparent & vector files</li>
-          </ul>
-        </div>
-        <div class="pricing-card">
-          <h3>Rush Delivery (3 days)</h3>
-          <p>$40 add-on</p>
-          <ul>
-            <li>Available on all packages</li>
-            <li>Limited to 1 revision</li>
-          </ul>
-        </div>
+    <section class="highlight-boxes">
+      <div class="highlight">
+        <h3>Starter Logo Package <span style="float:right;">$100+</span></h3>
+        <ul>
+          <li>One custom logo concept</li>
+          <li>Font and color suggestions</li>
+          <li>1 revision</li>
+          <li>Files: PNG, JPG</li>
+        </ul>
       </div>
-    </div>
 
-    <div class="section">
-      <h2>Process</h2>
-      <ol>
-        <li>Discovery: We’ll talk about your goals and preferences.</li>
-        <li>Concepts: You’ll get custom logo options to choose from.</li>
-        <li>Revisions: I’ll refine your selected concept based on feedback.</li>
-        <li>Delivery: Final files sent in the formats you need.</li>
-      </ol>
-    </div>
+      <div class="highlight">
+        <h3>Pro Logo Package <span style="float:right;">$200+</span></h3>
+        <ul>
+          <li>2–3 logo concepts</li>
+          <li>Up to 3 revisions</li>
+          <li>Color palette & font guide</li>
+          <li>Files: PNG, JPG, SVG</li>
+        </ul>
+      </div>
 
-    <div class="section">
-      <h2>Terms & Payment</h2>
-      <ul>
-        <li>50% deposit required for logo projects</li>
-        <li>Balance due before final file delivery</li>
-        <li>Payment accepted via Venmo, PayPal, or CashApp</li>
+      <div class="highlight">
+        <h3>Brand Kit Add-On <span style="float:right;">$100</span></h3>
+        <ul>
+          <li>Social icons (profile + header)</li>
+          <li>Favicon design</li>
+          <li>Mini brand guidelines</li>
+          <li>Includes transparent & vector files</li>
+        </ul>
+      </div>
+
+      <div class="highlight">
+        <h3>Rush Delivery (3 days) <span style="float:right;">$40</span></h3>
+        <ul>
+          <li>Available on all packages</li>
+          <li>Limited to 1 revision</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="hero">
+      <h2>Design Process</h2>
+      <p>Every logo is a collaboration. Here’s what to expect:</p>
+      <ul style="max-width: 800px; margin: 0 auto; padding-left: 20px; color: #366B5D;">
+        <li><strong>Discovery:</strong> We talk through your vision and brand identity</li>
+        <li><strong>Concepts:</strong> You receive logo ideas tailored to your goals</li>
+        <li><strong>Revisions:</strong> I refine your favorite option</li>
+        <li><strong>Delivery:</strong> Final files in your preferred formats</li>
       </ul>
-    </div>
+    </section>
+
+    <section class="hero" style="background-color: #F2F0E9;">
+      <h2>Terms & Payment</h2>
+      <ul style="list-style-type: disc; max-width: 800px; margin: 0 auto; padding-left: 20px; color: #366B5D;">
+        <li>50% deposit required before work begins</li>
+        <li>Balance due before final delivery</li>
+        <li>Accepted payments: Venmo, PayPal, CashApp</li>
+        <li>Invoices sent via email</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>Contact: <a href="mailto:hello@ommanicollective.com">hello@ommanicollective.com</a></p>
-    <p>&copy; 2025 Ommani Collective | All Rights Reserved</p>
+    <p>Contact: <a href="mailto:hello@ommanicollective.com">hello@ommanicollective.com</a> | www.OmmaniCollective.com</p>
   </footer>
 </body>
 </html>
