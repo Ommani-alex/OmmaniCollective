@@ -173,6 +173,35 @@ nav a:hover {
   color: #366B5D;
 }
 
+.terms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.terms-card {
+  background-color: #CBDCC8;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.terms-card h4 {
+  font-size: 1.1rem;
+  color: #366B5D;
+  margin-bottom: 10px;
+}
+
+.terms-card p {
+  font-size: 0.95rem;
+  color: #366B5D;
+}
+
+
 /* ====== FOOTER ====== */
 footer {
   background-color: #366B5D;
