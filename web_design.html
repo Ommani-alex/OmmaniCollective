@@ -9,13 +9,13 @@
 <body>
   <header class="site-header">
     <div class="logo-title">
-      <img src="Logos/logo.png" alt="Ommani Collective Logo" class="logo">
+      <img src="Logos/logo.png" alt="Ommani Collective Logo" class="logo" />
       <div class="site-title">
         <h1>Ommani Collective</h1>
         <p class="tagline">Built for change. Powered by purpose.</p>
       </div>
     </div>
-    <nav>
+    <nav class="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="web_design.html">Web Design</a></li>
@@ -27,70 +27,78 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Web Design Services</h2>
-      <p>Clean, mobile-friendly websites crafted with purpose, built to scale.</p>
-    </section>
-
-    <section class="highlight-boxes">
-      <div class="highlight">
-        <h3>GitHub Pages (Custom Coded HTML/CSS) <span style="float:right;">$400+</span></h3>
-        <p>Mobile-responsive site with up to 5 pages</p>
-        <p>Includes contact form, image gallery, and accessibility-first design</p>
-      </div>
-
-      <div class="highlight">
-        <h3>Squarespace Setup <span style="float:right;">$350+</span></h3>
-        <p>Includes content upload, mobile optimization, and basic SEO</p>
-        <p>Perfect for portfolios, service providers, or simple blogs</p>
-      </div>
-
-      <div class="highlight">
-        <h3>Shopify E-Commerce Setup <span style="float:right;">$550+</span></h3>
-        <p>Includes homepage design, payment/shipping setup, and 5–10 products</p>
-        <p>Optional add-ons: branding, email integrations, page expansion</p>
+    <!-- Hero Section -->
+    <section class="hero refined-hero">
+      <div class="hero-content">
+        <h2>Web Design Services</h2>
+        <p>Clean, mobile-friendly websites crafted with purpose, built to scale.</p>
       </div>
     </section>
 
-    <section class="hero">
-      <h2>Site Updates & Maintenance</h2>
-    </section>
-
-    <section class="highlight-boxes">
-      <div class="highlight">
-        <h3>Small Updates <span style="float:right;">$50–$75</span></h3>
-        <p>Text swaps, image replacement, link updates</p>
-      </div>
-
-      <div class="highlight">
-        <h3>Medium Updates <span style="float:right;">$100–$150</span></h3>
-        <p>New photos, layout tweaks, content rewrites</p>
-      </div>
-
-      <div class="highlight">
-        <h3>Large Updates <span style="float:right;">$200–$350</span></h3>
-        <p>New pages, full redesigns, or e-commerce additions</p>
-      </div>
-
-      <div class="highlight">
-        <h3>Ongoing Support <span style="float:right;">$60–$75/hr</span></h3>
-        <p>As-needed troubleshooting, edits, performance help</p>
+    <!-- Services Section -->
+    <section class="features-section">
+      <h2 class="section-heading">Website Setup Packages</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>GitHub Pages (Custom HTML/CSS) <span style="float:right; color:#366B5D">$400+</span></h3>
+          <p>Mobile-responsive site with up to 5 pages</p>
+          <p>Includes contact form, image gallery, and accessibility-first design</p>
+        </div>
+        <div class="feature-card">
+          <h3>Squarespace Setup <span style="float:right; color:#366B5D">$350+</span></h3>
+          <p>Includes content upload, mobile optimization, and basic SEO</p>
+          <p>Perfect for portfolios, service providers, or simple blogs</p>
+        </div>
+        <div class="feature-card">
+          <h3>Shopify E-Commerce Setup <span style="float:right; color:#366B5D">$550+</span></h3>
+          <p>Includes homepage design, payment/shipping setup, and 5–10 products</p>
+          <p>Optional add-ons: branding, email integrations, page expansion</p>
+        </div>
       </div>
     </section>
 
-    <section class="hero" style="background-color: #F2F0E9;">
-      <h2>Payment Terms</h2>
-      <ul style="list-style-type: disc; max-width: 800px; margin: 0 auto; padding-left: 20px; color: #366B5D;">
-        <li>50% deposit required before project start</li>
-        <li>Balance due before site launch</li>
-        <li>Accepted payments: Venmo, PayPal, or CashApp</li>
-        <li>Invoices sent by email</li>
-      </ul>
+    <!-- Maintenance Section -->
+    <section class="features-section">
+      <h2 class="section-heading">Site Updates & Maintenance</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Small Updates <span style="float:right; color:#366B5D">$50–$75</span></h3>
+          <p>Text swaps, image replacement, link updates</p>
+        </div>
+        <div class="feature-card">
+          <h3>Medium Updates <span style="float:right; color:#366B5D">$100–$150</span></h3>
+          <p>New photos, layout tweaks, content rewrites</p>
+        </div>
+        <div class="feature-card">
+          <h3>Large Updates <span style="float:right; color:#366B5D">$200–$350</span></h3>
+          <p>New pages, full redesigns, or e-commerce additions</p>
+        </div>
+        <div class="feature-card">
+          <h3>Ongoing Support <span style="float:right; color:#366B5D">$60–$75/hr</span></h3>
+          <p>As-needed troubleshooting, edits, performance help</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Terms Section -->
+    <section class="cta-section">
+      <div class="cta-card refined-cta">
+        <h2>Payment Terms</h2>
+        <ul style="list-style-type: disc; text-align: left; max-width: 700px; margin: 0 auto; padding-left: 20px; color: #FDFCF8;">
+          <li>50% deposit required before project start</li>
+          <li>Balance due before site launch</li>
+          <li>Accepted payments: Venmo, PayPal, or CashApp</li>
+          <li>Invoices sent by email</li>
+        </ul>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>Contact: <a href="mailto:hello@ommanicollective.com">hello@ommanicollective.com</a> | www.OmmaniCollective.com</p>
+    <p>
+      Contact: <a href="mailto:hello@ommanicollective.com">hello@ommanicollective.com</a> | www.OmmaniCollective.com
+    </p>
+    <p>&copy; 2025 Ommani Collective | All Rights Reserved</p>
   </footer>
 </body>
 </html>
