@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Ommani Collective</title>
+
+  <meta name="description" content="Ommani Collective is a values-driven studio crafting adaptive websites, branding, and systems for real people. Accessible by default.">
+  <meta property="og:title" content="Ommani Collective">
+  <meta property="og:description" content="Tech-forward, values-driven design and web systems built for change.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/og-image.png">
+  <meta property="og:url" content="https://ommani.co">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://ommani.co">
+
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-section {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .contact-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #366B5D;
+    }
+
+    .contact-section p {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #366B5D;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #CBDCC8;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    button {
+      background-color: #5C9F91;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #366B5D;
+    }
+    
+    select {
+      padding: 12px;
+      border: 1px solid #CBDCC8;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      background-color: white;
+      color: #333;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-title">
+      <img src="Logos/logo.png" alt="Ommani Collective Logo" class="logo">
+      <div class="site-title">
+        <h1>Ommani Collective</h1>
+        <p class="tagline">Built for change. Powered by purpose.</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="web_design.html">Web Design</a></li>
+        <li><a href="domain_services.html">Domain Setup</a></li>
+        <li><a href="logo_design.html">Logo Design</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>Let’s Connect</h2>
+      <p>Use the form below to reach out with project inquiries, questions, or collaboration ideas.</p>
+
+      <form action="https://formspree.io/f/xgvkzwaa" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+      
+        <select name="service" required>
+          <option value="" disabled selected>What do you need help with?</option>
+          <option value="Logo Design">Logo Design</option>
+          <option value="Webpage Design">Webpage Design</option>
+          <option value="Domain Setup">Domain Setup</option>
+          <option value="Other">Other</option>
+        </select>
+      
+        <textarea name="message" placeholder="Tell me more about your project..." required></textarea>
+        <input type="hidden" name="_redirect" value="https://ommanicollective.com/thank_you.html" />
+        <button type="submit">Send Message</button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:hello@ommanicollective.com">hello@ommanicollective.com</a> | www.OmmaniCollective.com</p>
+  </footer>
+</body>
+</html>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ommani Collective",
+  "url": "https://ommani.co",
+  "slogan": "Built for change. Powered by purpose.",
+  "sameAs": [
+    "https://github.com/Ommani-alex"
+  ]
+}
+</script>
+
