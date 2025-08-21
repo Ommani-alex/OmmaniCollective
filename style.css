@@ -1,0 +1,118 @@
+
+/* Ommani Collective – clean accessible theme */
+/* Base */
+:root{
+  --bg:#f7f8f6;
+  --card:#ffffff;
+  --ink:#173c35;
+  --muted:#426e63;
+  --accent:#2aa198;
+  --accent-ink:#0f2623;
+  --ring: 2px solid rgba(42,161,152,.35);
+  --radius: 14px;
+  --shadow: 0 6px 20px rgba(0,0,0,.06);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto}
+a{color:var(--accent);text-underline-offset:3px}
+.container{max-width:1100px;margin:0 auto;padding:0 1rem}
+
+/* Header */
+.site-header{
+  background:linear-gradient(180deg,#2e7a6b 0%, #2e7a6b 60%, transparent 60%);
+  color:#fff;
+  padding:1rem 0 0;
+}
+.site-header .container{
+  display:flex;align-items:center;gap:1rem
+}
+.logo{width:44px;height:auto;border-radius:10px;background:#fff;padding:4px;box-shadow:var(--shadow)}
+.site-title h1{font-size:1.35rem;margin:0}
+.site-title .tagline{font-size:.9rem;opacity:.9}
+
+/* Nav */
+nav{background:transparent}
+nav ul{list-style:none;display:flex;gap:.75rem;flex-wrap:wrap;margin:.75rem 0 0;padding:0}
+nav a{
+  display:inline-block;
+  padding:.55rem .9rem;
+  border-radius:999px;
+  background:rgba(255,255,255,.14);
+  color:#fff;
+  text-decoration:none;
+}
+nav a:hover, nav a:focus{
+  outline:none;
+  box-shadow:0 0 0 3px rgba(255,255,255,.5) inset;
+}
+
+/* Sections */
+main{padding:2rem 0}
+section{padding:1.25rem 0}
+.hero{
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:2rem;
+  margin:1rem auto;
+}
+.hero h2{margin:0 0 .5rem 0; font-size:1.6rem}
+.lead{font-size:1.1rem;color:var(--muted)}
+.grid{display:grid;gap:1rem}
+.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:900px){.grid.two,.grid.three{grid-template-columns:1fr}}
+
+/* Cards */
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:1rem 1.25rem;
+}
+.card h3{margin:.25rem 0 .5rem}
+.badge{
+  display:inline-flex;align-items:center;gap:.35rem;
+  background:#e8f4f2;color:var(--accent-ink);
+  padding:.2rem .6rem;border-radius:999px;font-size:.85rem
+}
+
+/* Lists */
+ul.clean{list-style:none;padding:0;margin:0}
+ul.clean li{padding:.25rem 0;display:flex;gap:.5rem}
+ul.prices{list-style:none;padding:0;margin:0}
+.price{float:right;font-weight:700;color:#1e5c52}
+
+/* Buttons */
+.button{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:var(--accent);color:#fff;text-decoration:none;
+  border:none;border-radius:999px;padding:.7rem 1rem;font-weight:600;
+  box-shadow:var(--shadow);
+}
+.button:hover,.button:focus{filter:brightness(0.95);outline:var(--ring)}
+
+/* Footer */
+footer{background:#2e7a6b;color:#eaf4f2;margin-top:3rem}
+footer .container{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding:1.25rem 0}
+footer a{color:#fff}
+
+/* Typography */
+h1,h2,h3{line-height:1.25}
+h1{font-size:2rem}
+p{margin:.5rem 0 1rem}
+
+/* Table style for pricing if any */
+table.pricing{width:100%;border-collapse:separate;border-spacing:0 .5rem}
+table.pricing th, table.pricing td{padding:.8rem 1rem;background:var(--card)}
+table.pricing tr{box-shadow:var(--shadow);border-radius:var(--radius)}
+table.pricing td:last-child{text-align:right;font-weight:700}
