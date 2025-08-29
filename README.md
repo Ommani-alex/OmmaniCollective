@@ -1,9 +1,20 @@
-# OmmaniCollective
-Brand Name: Ommani Collective
+# Ommani Collective Website  
 
-Tagline: Built for change. Powered by purpose.
+## Overview  
+Ommani Collective is a values-driven studio crafting adaptive and accessible design systems for creators, innovators, and changemakers. This repository hosts the official Ommani Collective website.  
 
-Intro Statement: Ommani Collective is a flexible, values-driven studio crafting systems, tools, and strategies that adapt to real people. We fuse technology with thoughtful design to empower creators, innovators, and changemakers by making systems work for people. We blend technology, empathy, and design to develop adaptive and accessible tools that support curiosity, purpose, and a more inclusive digital future. Our mission is to create flexible experiences and strategies that respond to real needs and help people thrive on their own terms.
+## Features  
+- Responsive multi-page design (Home, Contact, Services, Logo Design, Web Design).  
+- Accessibility-first layout and clean navigation.  
+- Integrated thank-you and contact forms.  
 
-Intro Statement (refined):
-Ommani Collective is a flexible, values-driven studio crafting systems, tools, and strategies that adapt to real people. We fuse technology with thoughtful design to empower creators, innovators, and changemakers. Our mission is to develop adaptive, accessible experiences that support curiosity, purpose, and a more inclusive digital future.
+## Tools & Technologies  
+- HTML5, CSS3  
+- Custom logo and icon assets  
+- Responsive web design principles  
+
+## Live Demo  
+[Visit Site](https://ommanicollective.com)  
+
+## Screenshots  
+(Insert images of the homepage, services page, and contact form)  
