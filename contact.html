@@ -5,143 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Ommani Collective</title>
 
-  <meta name="description" content="Ommani Collective is a values-driven studio crafting adaptive websites, branding, and systems for real people. Accessible by default.">
-  <meta property="og:title" content="Ommani Collective">
-  <meta property="og:description" content="Tech-forward, values-driven design and web systems built for change.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="/og-image.png">
-  <meta property="og:url" content="https://ommani.co">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://ommani.co">
+  <meta name="description" content="Contact Ommani Collective for web design, domain setup, logo design, or collaboration inquiries." />
+  <meta property="og:title" content="Contact | Ommani Collective" />
+  <meta property="og:description" content="Reach out for project inquiries, questions, or collaboration ideas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:url" content="https://ommani.co/contact.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://ommani.co/contact.html" />
 
-
-  <link rel="stylesheet" href="style.css?v=5">
-  <style>
-    .contact-section {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 60px 20px;
-    }
-
-    .contact-section h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #366B5D;
-    }
-
-    .contact-section p {
-      text-align: center;
-      margin-bottom: 40px;
-      color: #366B5D;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    input, textarea {
-      padding: 12px;
-      border: 1px solid #CBDCC8;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-family: inherit;
-    }
-
-    textarea {
-      min-height: 120px;
-    }
-
-    button {
-      background-color: #5C9F91;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-    }
-
-    button:hover {
-      background-color: #366B5D;
-    }
-    
-    select {
-      padding: 12px;
-      border: 1px solid #CBDCC8;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-family: inherit;
-      background-color: white;
-      color: #333;
-    }
-
-  </style>
+  <link rel="stylesheet" href="style.css?v=7" />
 </head>
+
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="site-header">
-    <div class="logo-title">
-      <img src="Logos/logo.png" alt="Ommani Collective Logo" class="logo">
-      <div class="site-title">
-        <h1>Ommani Collective</h1>
-        <p class="tagline">Built for change. Powered by purpose.</p>
+    <div class="header-inner">
+      <div class="logo-title">
+        <img src="Logos/logo.png" alt="Ommani Collective logo" class="logo" />
+        <div class="site-title">
+          <h1>Ommani Collective</h1>
+          <p class="tagline">Built for change. Powered by purpose.</p>
+        </div>
       </div>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="web_design.html">Web Design</a></li>
+          <li><a href="domain_services.html">Domain Setup</a></li>
+          <li><a href="logo_design.html">Logo Design</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="web_design.html">Web Design</a></li>
-        <li><a href="domain_services.html">Domain Setup</a></li>
-        <li><a href="logo_design.html">Logo Design</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
-    <section class="contact-section">
-      <h2>Let’s Connect</h2>
-      <p>Use the form below to reach out with project inquiries, questions, or collaboration ideas.</p>
+  <main id="main-content">
+    <section class="hero refined-hero" aria-label="Contact intro">
+      <div class="hero-content">
+        <h2>Let’s Connect</h2>
+        <p>Use the form below to reach out with project inquiries, questions, or collaboration ideas.</p>
+      </div>
+    </section>
 
-      <form action="https://formspree.io/f/xgvkzwaa" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-      
-        <select name="service" required>
-          <option value="" disabled selected>What do you need help with?</option>
-          <option value="Logo Design">Logo Design</option>
-          <option value="Webpage Design">Webpage Design</option>
-          <option value="Domain Setup">Domain Setup</option>
-          <option value="Other">Other</option>
-        </select>
-      
-        <textarea name="message" placeholder="Tell me more about your project..." required></textarea>
+    <section class="contact-section" aria-label="Contact form">
+      <form class="form-grid" action="https://formspree.io/f/xgvkzwaa" method="POST">
+        <div>
+          <label class="sr-only" for="name">Your name</label>
+          <input id="name" type="text" name="name" autocomplete="name" required placeholder="Your Name" />
+        </div>
+
+        <div>
+          <label class="sr-only" for="email">Your email</label>
+          <input id="email" type="email" name="email" autocomplete="email" required placeholder="Your Email" />
+        </div>
+
+        <div>
+          <label class="sr-only" for="service">What do you need help with?</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>What do you need help with?</option>
+            <option value="Logo Design">Logo Design</option>
+            <option value="Web Design">Web Design</option>
+            <option value="Domain Setup">Domain Setup</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="sr-only" for="message">Tell me about your project</label>
+          <textarea id="message" name="message" required placeholder="Tell me more about your project..."></textarea>
+        </div>
+
         <input type="hidden" name="_redirect" value="https://ommanicollective.com/thank_you.html" />
         <button type="submit">Send Message</button>
       </form>
-
     </section>
   </main>
 
-  <footer>
-    <p>Contact: <a href="mailto:hello@ommanicollective.com">hello@ommanicollective.com</a> | www.OmmaniCollective.com</p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Contact: <a href="mailto:hello@ommanicollective.com">hello@ommanicollective.com</a></p>
+      <p>&copy; <span id="copyright-year">2025</span> Ommani Collective | All Rights Reserved</p>
+    </div>
   </footer>
+
+  <script>
+    // Automatically keeps the year current (no manual edits each January)
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ommani Collective",
+    "url": "https://ommani.co",
+    "slogan": "Built for change. Powered by purpose.",
+    "sameAs": ["https://github.com/Ommani-alex"]
+  }
+  </script>
 </body>
 </html>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Ommani Collective",
-  "url": "https://ommani.co",
-  "slogan": "Built for change. Powered by purpose.",
-  "sameAs": [
-    "https://github.com/Ommani-alex"
-  ]
-}
-</script>
-
