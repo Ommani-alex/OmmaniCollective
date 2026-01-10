@@ -1,14 +1,13 @@
-
-/* Ommani Collective – v5 spacing + header/nav separation */
+/* Ommani Collective - v6 header alignment + no nav bubbles + accessibility polish */
 
 /* Tokens */
 :root{
   --bg: #f8f9f7;
   --panel: #ffffff;
   --ink: #0f2f2a;
-  --muted: #496861;
+  --muted: #3a4f4a; /* slightly darker for contrast */
   --brand: #2a7c6d;
-  --brand-2:#3a9889;
+  --brand-2: #3a9889;
   --ring: #cfece5;
   --shadow: 0 12px 30px rgba(0,0,0,.06);
   --radius: 20px;
@@ -27,47 +26,130 @@ body{
   line-height:1.7;
   -webkit-font-smoothing: antialiased;
 }
+
 img{max-width:100%; height:auto; display:block}
-a{color:#165e52; text-underline-offset:2px}
+
+a{
+  color:#165e52;
+  text-underline-offset: 2px;
+}
+
+a:focus-visible{
+  outline: 3px solid var(--ring);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+/* Skip link */
+.skip-link{
+  position:absolute;
+  left:-9999px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.skip-link:focus{
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  padding: 10px 12px;
+  background: #ffffff;
+  color: #0f2f2a;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  z-index: 9999;
+}
 
 /* Layout containers */
-.container{max-width: var(--maxw); margin:0 auto; padding: 0 22px}
-main{padding: 48px 22px; max-width: var(--maxw); margin:0 auto}
-.section{margin: 44px 0}
+main{
+  padding: 48px 22px;
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
 
-/* Header with clear separation from nav */
+/* Header */
 .site-header{
   background: var(--brand);
   color:#fff;
-  padding: 18px 0 0;
   box-shadow: var(--shadow);
 }
-.site-header .logo-wrap{max-width: var(--maxw); margin:0 auto; padding: 0 22px 16px}
-.logo-title{display:flex; align-items:center; gap:16px}
-.logo{width:48px;height:48px;object-fit:contain;border-radius:12px;background:#fff;padding:6px; box-shadow: var(--shadow)}
-.site-title h1{font-size: clamp(22px, 2.4vw, 28px); margin:0}
-.site-title .tagline{margin:.2rem 0 0 0; opacity:.95; font-size:1rem}
 
-/* NAV BAR – now clearly below the header */
-.navbar{
-  background: rgba(255,255,255,.9);
-  border-top: 1px solid rgba(255,255,255,.25);
-  box-shadow: 0 2px 12px rgba(0,0,0,.05);
+.header-inner{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 18px 22px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
 }
-.navbar .inner{max-width: var(--maxw); margin:0 auto; padding: 14px 22px}
-nav ul{list-style:none; display:flex; gap:.8rem; flex-wrap:wrap; margin:0; padding:0}
-nav a{
+
+.logo-title{
+  display:flex;
+  align-items:center;
+  gap: 16px;
+  min-width: 260px;
+}
+
+.logo{
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #fff;
+  padding: 6px;
+  box-shadow: var(--shadow);
+}
+
+.site-title h1{
+  font-size: clamp(22px, 2.4vw, 28px);
+  margin: 0;
+}
+
+.site-title .tagline{
+  margin: .2rem 0 0 0;
+  opacity: .95;
+  font-size: 1rem;
+}
+
+/* Nav: right aligned, no bubbles */
+.main-nav{
+  margin-left: auto;
+}
+
+.main-nav ul{
+  list-style:none;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a{
   display:inline-block;
-  text-decoration:none;
-  color:#0f3b34;
-  background:#fff;
-  border:1px solid rgba(16,59,52,.10);
-  padding:12px 18px;
-  border-radius:999px;
-  letter-spacing:.1px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px 6px;
+  border-radius: 10px;
+  letter-spacing: .1px;
 }
-nav a:hover{background:#fff; transform: translateY(-1px)}
-nav a:focus{outline:3px solid var(--ring); outline-offset:2px}
+
+.main-nav a:hover{
+  background: rgba(255,255,255,.14);
+}
+
+.main-nav a[aria-current="page"]{
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
 
 /* Panels / cards */
 .hero{
@@ -77,78 +159,132 @@ nav a:focus{outline:3px solid var(--ring); outline-offset:2px}
   box-shadow: var(--shadow);
   padding: 28px;
 }
-.hero.refined-hero{background: linear-gradient(180deg, #fff, #f3f7f5)}
 
-.features-grid{display:grid; gap: calc(var(--gap) + 2px); margin-top:12px}
-@media (min-width: 820px){ .features-grid{grid-template-columns: repeat(3, minmax(0, 1fr));}}
+.hero.refined-hero{
+  background: linear-gradient(180deg, #fff, #f3f7f5);
+}
+
+.hero-content{
+  max-width: 75ch;
+}
+
+.features-section{
+  margin-top: 36px;
+}
+
+.section-heading{
+  margin: 0 0 12px 0;
+}
+
+.features-grid{
+  display:grid;
+  gap: calc(var(--gap) + 2px);
+  margin-top: 12px;
+}
+
+@media (min-width: 820px){
+  .features-grid{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .feature-card{
   background: var(--panel);
   border: 1px solid #e6eeea;
   border-radius: var(--radius);
   padding: 22px;
-  text-decoration:none; color:inherit;
+  text-decoration: none;
+  color: inherit;
   box-shadow: var(--shadow);
   transition: transform .18s ease, box-shadow .18s ease;
 }
-.feature-card:hover{transform: translateY(-2px)}
-.feature-card h3{margin: 10px 0 6px}
-.feature-card p{color: var(--muted); margin: 0}
-.feature-icon{width:96px;height:auto;margin:2px 0 10px}
 
-/* Service highlight boxes */
-.highlight-boxes{display:grid; gap: var(--gap); margin-top: 12px}
-@media (min-width: 980px){ .highlight-boxes{grid-template-columns: repeat(2, minmax(0, 1fr));}}
-.highlight{
+.feature-card:hover{
+  transform: translateY(-2px);
+}
+
+.feature-card h3{
+  margin: 10px 0 6px;
+}
+
+.feature-card p{
+  color: var(--muted);
+  margin: 0;
+}
+
+.feature-icon{
+  width: 96px;
+  height: auto;
+  margin: 2px 0 10px;
+}
+
+/* CTA */
+.cta-section{
+  margin-top: 36px;
+}
+
+.cta-card{
   background: var(--panel);
   border: 1px solid #e6eeea;
   border-radius: var(--radius);
-  padding: 22px;
+  padding: 26px;
   box-shadow: var(--shadow);
 }
-.highlight h3{
-  display:flex; align-items:baseline; justify-content:space-between; gap: 12px;
-  margin: 6px 0 12px;
-}
-.highlight h3 span{color:#18695c; font-weight: 800}
 
-/* Process (Logo page) – subtle icons and roomy grid */
-.process-grid{display:grid; gap: var(--gap); margin-top: 12px}
-@media (min-width: 1140px){ .process-grid{grid-template-columns: repeat(3,minmax(0,1fr));}}
-.process-card{
-  background: var(--panel);
-  border:1px solid #e6eeea;
-  border-radius: var(--radius);
-  padding: 22px;
+.refined-cta{
+  background: linear-gradient(180deg, #ffffff, #f3f7f5);
+}
+
+.button{
+  display:inline-block;
+  background: var(--brand);
+  color:#fff;
+  border: 1px solid var(--brand);
+  padding: 12px 18px;
+  border-radius: 14px;
   box-shadow: var(--shadow);
+  cursor:pointer;
+  transition: transform .15s ease, background .2s ease;
+  text-decoration: none;
+  margin-top: 8px;
 }
-.process-card .icon-sm{width:40px; height:auto; opacity:.95; margin: 2px 0 10px; border-radius:8px}
-/* If you want text-only for now, uncomment: */
-/* .process-card .icon-sm{display:none} */
 
-/* Lists and text */
-h1,h2,h3{line-height:1.25; letter-spacing:.2px}
-h1{font-size: clamp(24px, 3.6vw, 40px)}
+.button:hover{
+  background: var(--brand-2);
+  transform: translateY(-1px);
+}
+
+.button:focus-visible{
+  outline: 3px solid var(--ring);
+  outline-offset: 3px;
+}
+
+/* Headings and text */
+h1,h2,h3{
+  line-height:1.25;
+  letter-spacing:.2px;
+}
 h2{font-size: clamp(20px, 3vw, 28px)}
 h3{font-size: clamp(18px, 2.4vw, 22px)}
 p{margin:.4rem 0 1rem}
-ul{padding-left: 20px}
-li{margin:.35rem 0}
-
-/* Forms */
-input, select, textarea{
-  width: 100%; padding: 12px 14px;
-  border-radius: 14px; border:1px solid #dfe7e3; background:#fff; color: var(--ink);
-  box-shadow: inset 0 1px 0 rgba(0,0,0,.02);
-}
-input:focus, select:focus, textarea:focus{outline:3px solid var(--ring); border-color: var(--brand)}
-[type=submit], .button, button{
-  background: var(--brand); color:#fff; border:1px solid var(--brand); padding: 12px 18px; border-radius: 14px;
-  box-shadow: var(--shadow); cursor:pointer; transition: transform .15s ease, background .2s ease;
-}
-[type=submit]:hover, .button:hover, button:hover{background: var(--brand-2); transform: translateY(-1px)}
-[type=submit]:focus, .button:focus, button:focus{outline:3px solid var(--ring); outline-offset:2px}
 
 /* Footer */
-footer{background: var(--brand); color:#eaf4f2; margin-top: 56px}
-footer .container{display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; padding:16px 22px}
-footer a{color:#fff}
+.site-footer{
+  background: var(--brand);
+  color: #eaf4f2;
+  margin-top: 56px;
+}
+
+.footer-inner{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 16px 22px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.site-footer a{
+  color:#fff;
+}
