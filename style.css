@@ -209,6 +209,9 @@ li{margin:.35rem 0}
   color: var(--brand);
   margin: 6px 0 10px;
 }
+.hero-content .button{
+  margin-top: 12px;
+}
 
 /* Highlight boxes (Domain + Logo pages) */
 .highlight-boxes{display:grid; gap: var(--gap); margin-top: 12px}
