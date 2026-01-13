@@ -1,1 +1,121 @@
 
+<!-- build: 2026-01-13 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ommani Collective | Home</title>
+
+  <meta name="description" content="Ommani Collective is a values-driven studio crafting adaptive websites, branding, and systems for real people. Accessible by default." />
+  <meta property="og:title" content="Ommani Collective" />
+  <meta property="og:description" content="Tech-forward, values-driven design and web systems built for change." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:url" content="https://ommanicollective.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://ommanicollective.com" />
+
+  <link rel="stylesheet" href="/style.css?v=7" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-title">
+        <img src="/Logos/logo.png" alt="Ommani Collective logo" class="logo" />
+        <div class="site-title">
+          <h1>Ommani Collective</h1>
+          <p class="tagline">Built for change. Powered by purpose.</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/web-design/" aria-current="page">Web Design</a></li>
+              <li><a href="/domain-services/">Domain Setup</a></li>
+              <li><a href="/logo-design/">Logo Design</a></li>
+              <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main-content">
+    <section class="hero refined-hero" aria-label="Intro">
+      <div class="hero-content">
+        <h2>Empowering Digital Presence</h2>
+        <p>
+          Ommani Collective is a flexible, values-driven studio crafting systems, tools, and strategies that adapt to real people.
+          We fuse technology with thoughtful design to empower creators, innovators, and changemakers.
+          Our mission is to develop adaptive, accessible experiences that support curiosity, purpose, and a more inclusive digital future.
+        </p>
+      </div>
+    </section>
+
+    <section class="features-section" aria-label="Services">
+      <h2 class="section-heading">What We Offer</h2>
+
+      <div class="features-grid">
+        <a href="web_design.html" class="feature-card" aria-label="Learn about website design services">
+          <img src="/Icons/Web_Design_Icon.png" alt="Icon representing website design services" class="feature-icon" />
+          <h3>Website Design</h3>
+          <p>Custom HTML, Squarespace, and Shopify builds that bring your brand to life.</p>
+        </a>
+
+        <a href="domain_services.html" class="feature-card" aria-label="Learn about domain services">
+          <img src="/Icons/Domain_Services_Icon.png" alt="Icon representing domain and DNS services" class="feature-icon" />
+          <h3>Domain Services</h3>
+          <p>DNS configuration, email setup, and Google Workspace support to make your domain work.</p>
+        </a>
+
+        <a href="logo_design.html" class="feature-card" aria-label="Learn about logo design services">
+          <img src="/Icons/Logo_Design_Icon.png" alt="Icon representing logo design services" class="feature-icon" />
+          <h3>Logo Design</h3>
+          <p>Visual identity services that align with your mission, audience, and aesthetic.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-label="Call to action">
+      <div class="cta-card refined-cta">
+        <h2>Ready to elevate your brand?</h2>
+        <p>
+          Let's build something meaningful together. Whether you're starting fresh or refining your identity,
+          we're here to help your digital presence thrive.
+        </p>
+        <a href="contact.html" class="button">Start Your Project</a>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Contact: <a href="mailto:hello@ommanicollective.com">hello@ommanicollective.com</a></p>
+      <p>&copy; <span id="copyright-year"></span> Ommani Collective | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    // Automatically keeps the year current (no manual edits each January)
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ommani Collective",
+    "url": "https://ommanicollective.com",
+    "slogan": "Built for change. Powered by purpose.",
+    "sameAs": ["https://github.com/Ommani-alex"]
+  }
+  </script>
+</body>
+</html>
