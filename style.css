@@ -125,6 +125,23 @@ main{
   font-size:1rem;
 }
 
+/* Make the logo/title area clickable without looking like a link */
+.brand-link{
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 14px;
+}
+
+.brand-link:hover{
+  background: rgba(255,255,255,.10);
+}
+
+.brand-link:focus-visible{
+  outline: 3px solid var(--ring);
+  outline-offset: 3px;
+}
+
 /* Nav: right aligned, no bubbles */
 .main-nav{
   margin-left:auto;
