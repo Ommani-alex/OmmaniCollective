@@ -1,0 +1,127 @@
+<!-- build: 2026-05-02 D641 portfolio page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Ommani Collective</title>
+  <meta name="description" content="Portfolio for Ommani Collective, featuring accessible websites, brand systems, digital workflows, and user-centered design projects." />
+  <meta property="og:title" content="Portfolio | Ommani Collective" />
+  <meta property="og:description" content="Accessible systems with a human center." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ommanicollective.com/portfolio/" />
+  <link rel="canonical" href="https://ommanicollective.com/portfolio/" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="/style.css?v=8" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D39WZF9YYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D39WZF9YYE');
+</script>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand-link" href="/" aria-label="Ommani Collective home">
+        <div class="logo-title">
+          <img src="/Logos/logo.png" alt="Ommani Collective logo" class="logo" />
+          <div class="site-title">
+            <h1>Ommani Collective</h1>
+            <p class="tagline">Built for change. Powered by purpose.</p>
+          </div>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/web-design/">Web Design</a></li>
+          <li><a href="/domain-services/">Domain Setup</a></li>
+          <li><a href="/logo-design/">Logo Design</a></li>
+          <li><a href="/portfolio/" aria-current="page">Portfolio</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero refined-hero" aria-label="Portfolio intro">
+      <div class="hero-content">
+        <h2>Accessible systems with a human center.</h2>
+        <p>
+          I design websites, workflows, and digital experiences that adapt to real people. My work focuses on clarity, accessibility, and practical systems that are easier to use and easier to maintain.
+        </p>
+        <a href="#selected-work" class="button">View Selected Work</a>
+      </div>
+    </section>
+
+    <section id="selected-work" class="features-section" aria-label="Selected work">
+      <h2 class="section-heading">Selected Work</h2>
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>Accessible Service Websites</h3>
+          <p>Custom HTML/CSS websites built with clear structure, mobile-friendly layouts, readable content, and accessibility-first design decisions.</p>
+          <p><strong>Focus:</strong> HTML/CSS, accessibility, responsive design</p>
+        </article>
+        <article class="feature-card">
+          <h3>Workflow Clarity</h3>
+          <p>Digital systems and page structures that simplify decision-making, reduce confusion, and help users understand where to go next.</p>
+          <p><strong>Focus:</strong> UX, information architecture, clarity</p>
+        </article>
+        <article class="feature-card">
+          <h3>Purpose-Led Visual Direction</h3>
+          <p>Logo and brand support that reflects a client’s mission, audience, tone, and long-term goals without losing warmth or personality.</p>
+          <p><strong>Focus:</strong> branding, visual systems, purpose</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="highlight-boxes" aria-label="Portfolio values">
+      <article class="highlight">
+        <h3>What Guides the Work</h3>
+        <ul>
+          <li>Accessible layouts and readable content</li>
+          <li>Clear navigation and predictable structure</li>
+          <li>Flexible systems that can grow over time</li>
+          <li>Design choices that reduce cognitive load</li>
+        </ul>
+      </article>
+      <article class="highlight">
+        <h3>Current Direction</h3>
+        <p>I am continuing to build my portfolio through user experience design coursework, Ommani Collective client work, and real-world projects that combine accessibility, systems thinking, and thoughtful digital design.</p>
+      </article>
+      <article class="highlight full-width">
+        <h3>Portfolio Note</h3>
+        <p>These pages were created as the first iteration of a digital professional portfolio. They connect my career purpose, personal values, strengths, and design direction with the live Ommani Collective website.</p>
+      </article>
+    </section>
+
+    <section class="cta-section" aria-label="Contact call to action">
+      <div class="cta-card refined-cta">
+        <h2>Want to build something more usable?</h2>
+        <p>Let’s create a digital presence that is clear, flexible, and built around real people.</p>
+        <a href="/contact/" class="button">Contact Ommani Collective</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Contact: <a href="mailto:hello@ommanicollective.com">hello@ommanicollective.com</a></p>
+      <p>&copy; <span id="copyright-year"></span> Ommani Collective | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
