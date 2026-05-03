@@ -1,0 +1,207 @@
+<!-- build: 2026-01-13 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ommani Collective | Home</title>
+
+  <meta name="description" content="Ommani Collective is a values-driven studio crafting adaptive websites, branding, and systems for real people. Accessible by default." />
+  <meta property="og:title" content="Ommani Collective" />
+  <meta property="og:description" content="Tech-forward, values-driven design and web systems built for change." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:url" content="https://ommanicollective.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://ommanicollective.com/" />
+
+  <link rel="stylesheet" href="/style.css?v=11" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D39WZF9YYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D39WZF9YYE');
+</script>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-title">
+        <img src="/Logos/logo.png" alt="Ommani Collective logo" class="logo" />
+        <div class="site-title">
+          <h1>Ommani Collective</h1>
+          <p class="tagline">Built for change. Powered by purpose.</p>
+        </div>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Enable dark mode" aria-pressed="false">
+        <span class="icon-light" aria-hidden="true">☀️</span>
+        <span class="icon-dark" aria-hidden="true">🌙</span>
+      </button>
+      <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only nav-toggle-text">Open main menu</span>
+        <span class="hamburger" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <nav id="primary-navigation" class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="/" aria-current="page">Home</a></li>
+          <li><a href="/web-design/">Web Design</a></li>
+          <li><a href="/domain-services/">Domain Setup</a></li>
+          <li><a href="/logo-design/">Logo Design</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero refined-hero" aria-label="Intro">
+      <div class="hero-content">
+        <h2>Empowering Digital Presence</h2>
+        <p>
+          Ommani Collective is a flexible, values-driven studio crafting systems, tools, and strategies that adapt to real people.
+          We fuse technology with thoughtful design to empower creators, innovators, and changemakers.
+          Our mission is to develop adaptive, accessible experiences that support curiosity, purpose, and a more inclusive digital future.
+        </p>
+      </div>
+    </section>
+
+    <section class="features-section" aria-label="Services">
+      <h2 class="section-heading">What We Offer</h2>
+
+      <div class="features-grid">
+        <a href="/web-design/" class="feature-card" aria-label="Learn about website design services">
+          <img src="/Icons/Web_Design_Icon.png" alt="Icon representing website design services" class="feature-icon" />
+          <h3>Website Design</h3>
+          <p>Custom HTML, Squarespace, and Shopify builds that bring your brand to life.</p>
+        </a>
+
+        <a href="/domain-services/" class="feature-card" aria-label="Learn about domain services">
+          <img src="/Icons/Domain_Services_Icon.png" alt="Icon representing domain and DNS services" class="feature-icon" />
+          <h3>Domain Services</h3>
+          <p>DNS configuration, email setup, and Google Workspace support to make your domain work.</p>
+        </a>
+
+        <a href="/logo-design/" class="feature-card" aria-label="Learn about logo design services">
+          <img src="/Icons/Logo_Design_Icon.png" alt="Icon representing logo design services" class="feature-icon" />
+          <h3>Logo Design</h3>
+          <p>Visual identity services that align with your mission, audience, and aesthetic.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-label="Call to action">
+      <div class="cta-card refined-cta">
+        <h2>Ready to elevate your brand?</h2>
+        <p>
+          Let's build something meaningful together. Whether you're starting fresh or refining your identity,
+          we're here to help your digital presence thrive.
+        </p>
+        <a href="/contact/" class="button">Start Your Project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Contact: <a href="mailto:hello@ommanicollective.com">hello@ommanicollective.com</a></p>
+      <p>&copy; <span id="copyright-year"></span> Ommani Collective | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ommani Collective",
+    "url": "https://ommanicollective.com/",
+    "slogan": "Built for change. Powered by purpose.",
+    "sameAs": ["https://github.com/Ommani-alex"]
+  }
+  </script>
+
+  <script>
+    (function () {
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('primary-navigation');
+      if (!toggle || !nav) return;
+
+      document.body.classList.add('has-js');
+      const label = toggle.querySelector('.nav-toggle-text');
+
+      function setMenu(open, moveFocus) {
+        toggle.setAttribute('aria-expanded', String(open));
+        document.body.classList.toggle('nav-open', open);
+        if (label) label.textContent = open ? 'Close main menu' : 'Open main menu';
+        if (moveFocus) toggle.focus();
+      }
+
+      toggle.addEventListener('click', function () {
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        setMenu(!isOpen, false);
+      });
+
+      nav.addEventListener('click', function (event) {
+        if (event.target.closest('a')) {
+          setMenu(false, false);
+        }
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          setMenu(false, true);
+        }
+      });
+
+      const wideScreen = window.matchMedia('(min-width: 821px)');
+      wideScreen.addEventListener('change', function (event) {
+        if (event.matches) setMenu(false, false);
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggle = document.getElementById('theme-toggle');
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+
+      function applyTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        if (!toggle) return;
+        const isDark = theme === 'dark';
+        toggle.setAttribute('aria-pressed', String(isDark));
+        toggle.setAttribute('aria-label', isDark ? 'Enable light mode' : 'Enable dark mode');
+      }
+
+      applyTheme(initialTheme);
+
+      if (toggle) {
+        toggle.addEventListener('click', function () {
+          const current = root.getAttribute('data-theme') || 'light';
+          const next = current === 'dark' ? 'light' : 'dark';
+          localStorage.setItem('theme', next);
+          applyTheme(next);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

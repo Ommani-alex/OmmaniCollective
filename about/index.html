@@ -1,0 +1,196 @@
+<!-- build: 2026-05-02 D641 about page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Ommani Collective</title>
+  <meta name="description" content="About Ommani Alex, founder of Ommani Collective, a values-driven studio creating accessible, adaptable systems and digital experiences." />
+  <meta property="og:title" content="About | Ommani Collective" />
+  <meta property="og:description" content="Designing for real life, not perfect conditions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ommanicollective.com/about/" />
+  <link rel="canonical" href="https://ommanicollective.com/about/" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="/style.css?v=11" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D39WZF9YYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D39WZF9YYE');
+</script>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand-link" href="/" aria-label="Ommani Collective home">
+        <div class="logo-title">
+          <img src="/Logos/logo.png" alt="Ommani Collective logo" class="logo" />
+          <div class="site-title">
+            <h1>Ommani Collective</h1>
+            <p class="tagline">Built for change. Powered by purpose.</p>
+          </div>
+        </div>
+      </a>
+
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Enable dark mode" aria-pressed="false">
+        <span class="icon-light" aria-hidden="true">☀️</span>
+        <span class="icon-dark" aria-hidden="true">🌙</span>
+      </button>
+
+      <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only nav-toggle-text">Open main menu</span>
+        <span class="hamburger" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <nav id="primary-navigation" class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/web-design/">Web Design</a></li>
+          <li><a href="/domain-services/">Domain Setup</a></li>
+          <li><a href="/logo-design/">Logo Design</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/about/" aria-current="page">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero refined-hero" aria-label="About Ommani Alex">
+      <div class="hero-content">
+        <h2>Designing for real life, not perfect conditions.</h2>
+        <p>
+          I am a user experience design student and the founder of Ommani Collective, a values-driven studio focused on creating accessible, adaptable systems and digital experiences.
+        </p>
+        <p>
+          My work is shaped by lived experience, practical problem-solving, and a deep belief that technology should make life easier to navigate, not harder. I design for real people, including people who are overwhelmed, distracted, tired, learning something new, or trying to move through systems that were not built with them in mind.
+        </p>
+        <a href="/portfolio/" class="button">View My Portfolio</a>
+      </div>
+    </section>
+
+    <section class="features-section" aria-label="Values and strengths">
+      <h2 class="section-heading">What Guides My Work</h2>
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>Accessibility</h3>
+          <p>Access is not optional. I believe systems should support different cognitive styles, energy levels, and lived experiences instead of expecting every user to fit one narrow standard.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Compassion</h3>
+          <p>Good design starts by understanding what people are actually dealing with. I focus on creating solutions that feel supportive, clear, and realistic.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Systems Thinking</h3>
+          <p>I naturally notice where processes break down, where people get stuck, and what needs to be clarified so the experience feels easier to use and maintain.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="highlight-boxes" aria-label="Design approach">
+      <article class="highlight">
+        <h3>Clear</h3>
+        <p>I prioritize structure, readable content, and simple next steps so people do not have to fight the design to understand what to do.</p>
+      </article>
+      <article class="highlight">
+        <h3>Flexible</h3>
+        <p>I design with real-world inconsistency in mind, including low-energy days, distraction, stress, and changing needs.</p>
+      </article>
+      <article class="highlight full-width">
+        <h3>What shaped this work</h3>
+        <p>Working in veterinary clinics during major software transitions showed me how much system design affects people’s ability to function. When workflows are unclear, even capable teams can feel overwhelmed. When systems are thoughtful, visual, and well structured, the work becomes easier to manage. That experience still informs how I think about accessibility, change, and user support.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Contact: <a href="mailto:hello@ommanicollective.com">hello@ommanicollective.com</a></p>
+      <p>&copy; <span id="copyright-year"></span> Ommani Collective | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+    (function () {
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('primary-navigation');
+      if (!toggle || !nav) return;
+
+      document.body.classList.add('has-js');
+      const label = toggle.querySelector('.nav-toggle-text');
+
+      function setMenu(open, moveFocus) {
+        toggle.setAttribute('aria-expanded', String(open));
+        document.body.classList.toggle('nav-open', open);
+        if (label) label.textContent = open ? 'Close main menu' : 'Open main menu';
+        if (moveFocus) toggle.focus();
+      }
+
+      toggle.addEventListener('click', function () {
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        setMenu(!isOpen, false);
+      });
+
+      nav.addEventListener('click', function (event) {
+        if (event.target.closest('a')) {
+          setMenu(false, false);
+        }
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          setMenu(false, true);
+        }
+      });
+
+      const wideScreen = window.matchMedia('(min-width: 821px)');
+      wideScreen.addEventListener('change', function (event) {
+        if (event.matches) setMenu(false, false);
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggle = document.getElementById('theme-toggle');
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+
+      function applyTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        if (!toggle) return;
+        const isDark = theme === 'dark';
+        toggle.setAttribute('aria-pressed', String(isDark));
+        toggle.setAttribute('aria-label', isDark ? 'Enable light mode' : 'Enable dark mode');
+      }
+
+      applyTheme(initialTheme);
+
+      if (toggle) {
+        toggle.addEventListener('click', function () {
+          const current = root.getAttribute('data-theme') || 'light';
+          const next = current === 'dark' ? 'light' : 'dark';
+          localStorage.setItem('theme', next);
+          applyTheme(next);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

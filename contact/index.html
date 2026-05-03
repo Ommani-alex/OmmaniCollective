@@ -1,0 +1,205 @@
+<!-- build: 2026-01-13 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Ommani Collective</title>
+
+  <meta name="description" content="Contact Ommani Collective for web design, domain setup, logo design, or collaboration inquiries." />
+  <meta property="og:title" content="Contact | Ommani Collective" />
+  <meta property="og:description" content="Reach out for project inquiries, questions, or collaboration ideas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:url" content="https://ommanicollective.com/contact/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://ommanicollective.com/contact/" />
+
+  <link rel="stylesheet" href="/style.css?v=11" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D39WZF9YYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D39WZF9YYE');
+</script>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+     <a class="brand-link" href="/" aria-label="Ommani Collective home">
+  <div class="logo-title">
+    <img src="/Logos/logo.png" alt="Ommani Collective logo" class="logo" />
+    <div class="site-title">
+      <h1>Ommani Collective</h1>
+      <p class="tagline">Built for change. Powered by purpose.</p>
+    </div>
+  </div>
+</a>
+
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Enable dark mode" aria-pressed="false">
+        <span class="icon-light" aria-hidden="true">☀️</span>
+        <span class="icon-dark" aria-hidden="true">🌙</span>
+      </button>
+
+      <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only nav-toggle-text">Open main menu</span>
+        <span class="hamburger" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <nav id="primary-navigation" class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/web-design/">Web Design</a></li>
+          <li><a href="/domain-services/">Domain Setup</a></li>
+          <li><a href="/logo-design/">Logo Design</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero refined-hero" aria-label="Contact intro">
+      <div class="hero-content">
+        <h2>Let’s Connect</h2>
+        <p>Use the form below to reach out with project inquiries, questions, or collaboration ideas.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-label="Contact form">
+      <form class="form-grid" action="https://formspree.io/f/xgvkzwaa" method="POST">
+        <div>
+          <label class="sr-only" for="name">Your name</label>
+          <input id="name" type="text" name="name" autocomplete="name" required placeholder="Your Name" />
+        </div>
+
+        <div>
+          <label class="sr-only" for="email">Your email</label>
+          <input id="email" type="email" name="email" autocomplete="email" required placeholder="Your Email" />
+        </div>
+
+        <div>
+          <label class="sr-only" for="service">What do you need help with?</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>What do you need help with?</option>
+            <option value="Logo Design">Logo Design</option>
+            <option value="Web Design">Web Design</option>
+            <option value="Domain Setup">Domain Setup</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="sr-only" for="message">Tell me about your project</label>
+          <textarea id="message" name="message" required placeholder="Tell me more about your project..."></textarea>
+        </div>
+
+        <input type="hidden" name="_redirect" value="https://ommanicollective.com/thank_you.html" />
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Contact: <a href="mailto:hello@ommanicollective.com">hello@ommanicollective.com</a></p>
+      <p>&copy; <span id="copyright-year"></span> Ommani Collective | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ommani Collective",
+    "url": "https://ommanicollective.com/",
+    "slogan": "Built for change. Powered by purpose.",
+    "sameAs": ["https://github.com/Ommani-alex"]
+  }
+  </script>
+
+  <script>
+    (function () {
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('primary-navigation');
+      if (!toggle || !nav) return;
+
+      document.body.classList.add('has-js');
+      const label = toggle.querySelector('.nav-toggle-text');
+
+      function setMenu(open, moveFocus) {
+        toggle.setAttribute('aria-expanded', String(open));
+        document.body.classList.toggle('nav-open', open);
+        if (label) label.textContent = open ? 'Close main menu' : 'Open main menu';
+        if (moveFocus) toggle.focus();
+      }
+
+      toggle.addEventListener('click', function () {
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        setMenu(!isOpen, false);
+      });
+
+      nav.addEventListener('click', function (event) {
+        if (event.target.closest('a')) {
+          setMenu(false, false);
+        }
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          setMenu(false, true);
+        }
+      });
+
+      const wideScreen = window.matchMedia('(min-width: 821px)');
+      wideScreen.addEventListener('change', function (event) {
+        if (event.matches) setMenu(false, false);
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggle = document.getElementById('theme-toggle');
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+
+      function applyTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        if (!toggle) return;
+        const isDark = theme === 'dark';
+        toggle.setAttribute('aria-pressed', String(isDark));
+        toggle.setAttribute('aria-label', isDark ? 'Enable light mode' : 'Enable dark mode');
+      }
+
+      applyTheme(initialTheme);
+
+      if (toggle) {
+        toggle.addEventListener('click', function () {
+          const current = root.getAttribute('data-theme') || 'light';
+          const next = current === 'dark' ? 'light' : 'dark';
+          localStorage.setItem('theme', next);
+          applyTheme(next);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
