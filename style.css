@@ -170,7 +170,7 @@ a:focus-visible{
 
   border-radius: 12px;
 
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-color);
 
   z-index: 9999;
 
@@ -196,11 +196,11 @@ main{
 
 .site-header{
 
-  background: var(--brand);
+  background: var(--brand-color);
 
   color:#fff;
 
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-color);
 
 }
 
@@ -250,7 +250,7 @@ main{
 
   padding:6px;
 
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-color);
 
 }
 
@@ -396,13 +396,13 @@ main{
 
   background:#ffffff;
 
-  color:var(--ink);
+  color:var(--ink-color);
 
   border:2px solid rgba(255,255,255,.9);
 
   border-radius:14px;
 
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-color);
 
 }
 
@@ -420,11 +420,11 @@ main{
 
 .nav-toggle:focus-visible{
 
-  outline:4px solid var(--focus);
+  outline:4px solid var(--focus-color);
 
   outline-offset:4px;
 
-  box-shadow:0 0 0 2px var(--focus-dark), var(--shadow);
+  box-shadow:0 0 0 2px var(--focus-dark), var(--shadow-color);
 
 }
 
@@ -460,7 +460,7 @@ main{
 
 .main-nav a:focus-visible{
 
-  outline:4px solid var(--focus);
+  outline:4px solid var(--focus-color);
 
   outline-offset:4px;
 
@@ -574,13 +574,13 @@ li{margin:.35rem 0}
 
 .hero{
 
-  background: var(--panel);
+  background: var(--panel-color);
 
   border: 1px solid #e7eee9;
 
   border-radius: var(--radius);
 
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-color);
 
   padding: 28px;
 
@@ -622,7 +622,7 @@ li{margin:.35rem 0}
 
 .feature-card{
 
-  background: var(--panel);
+  background: var(--panel-color);
 
   border: 1px solid #e6eeea;
 
@@ -634,7 +634,7 @@ li{margin:.35rem 0}
 
   color:inherit;
 
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-color);
 
   transition: transform .18s ease, box-shadow .18s ease;
 
@@ -680,7 +680,7 @@ li{margin:.35rem 0}
 
 .highlight{
 
-  background: var(--panel);
+  background: var(--panel-color);
 
   border: 1px solid #e6eeea;
 
@@ -688,7 +688,7 @@ li{margin:.35rem 0}
 
   padding: 22px;
 
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-color);
 
 }
 
@@ -728,7 +728,7 @@ li{margin:.35rem 0}
 
 .cta-card{
 
-  background: var(--panel);
+  background: var(--panel-color);
 
   border: 1px solid #e6eeea;
 
@@ -736,7 +736,7 @@ li{margin:.35rem 0}
 
   padding: 26px;
 
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-color);
 
 }
 
@@ -756,17 +756,17 @@ button,
 
   display:inline-block;
 
-  background: var(--brand);
+  background: var(--brand-color);
 
   color:#fff;
 
-  border: 1px solid var(--brand);
+  border: 1px solid var(--brand-color);
 
   padding: 12px 18px;
 
   border-radius: 14px;
 
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-color);
 
   cursor:pointer;
 
@@ -798,7 +798,7 @@ button:focus-visible,
 
   outline-offset: 4px;
 
-  box-shadow: 0 0 0 2px var(--focus-dark), var(--shadow);
+  box-shadow: 0 0 0 2px var(--focus-dark), var(--shadow-color);
 
 }
 
@@ -834,7 +834,7 @@ input:focus, select:focus, textarea:focus{
 
   outline-offset: 2px;
 
-  border-color: var(--brand);
+  border-color: var(--brand-color);
 
   box-shadow: 0 0 0 2px var(--focus-dark);
 
@@ -880,7 +880,7 @@ textarea{min-height: 140px}
 
 .site-footer{
 
-  background: var(--brand);
+  background: var(--brand-color);
 
   color:#eaf4f2;
 
@@ -916,7 +916,7 @@ textarea{min-height: 140px}
 
 .eyebrow-text{
 
-  color: var(--brand);
+  color: var(--brand-color);
 
   font-weight: 800;
 
@@ -936,13 +936,13 @@ textarea{min-height: 140px}
 
   margin-top: 42px;
 
-  background: var(--panel);
+  background: var(--panel-color);
 
   border: 1px solid #e6eeea;
 
   border-radius: var(--radius);
 
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-color);
 
   padding: clamp(22px, 4vw, 34px);
 
@@ -998,7 +998,7 @@ textarea{min-height: 140px}
 
   display:block;
 
-  color: var(--muted);
+  color: var(--muted-color);
 
   font-size: .88rem;
 
@@ -1012,7 +1012,7 @@ textarea{min-height: 140px}
 
   display:block;
 
-  color: var(--ink);
+  color: var(--ink-color);
 
 }
 
@@ -1062,7 +1062,7 @@ textarea{min-height: 140px}
 
   overflow: hidden;
 
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-color);
 
 }
 
@@ -1100,7 +1100,7 @@ textarea{min-height: 140px}
 
   padding: 12px 14px;
 
-  color: var(--muted);
+  color: var(--muted-color);
 
   font-size: .94rem;
 
