@@ -1,0 +1,17 @@
+OMMANI ACCESSIBILITY NAV PATCH
+
+What changed:
+- Added a real hamburger button on mobile.
+- The button uses aria-controls="primary-navigation" and aria-expanded="false/true".
+- The screen-reader label changes from "Open main menu" to "Close main menu".
+- The Escape key closes the mobile menu and returns focus to the button.
+- Clicking a navigation link closes the mobile menu.
+- The menu remains visible if JavaScript fails, so users are not trapped without navigation.
+- Strengthened focus styles for links, buttons, form fields, navigation links, and the skip link.
+- Updated stylesheet links to /style.css?v=10 to avoid cached CSS.
+
+Files changed:
+- style.css
+- all main HTML pages with the site header/navigation
+
+Upload/replace the files in this patch, commit, then hard refresh the live site.
