@@ -216,6 +216,38 @@
         if (event.matches) setMenu(false, false);
       });
     })();
+    const themeToggleBtn = document.getElementById('theme-toggle');
+const rootElement = document.documentElement;
+
+// Check for saved user preference or system preference
+const savedTheme = localStorage.getItem('theme');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+  rootElement.setAttribute('data-theme', 'dark');
+  themeToggleBtn.setAttribute('aria-pressed', 'true');
+  themeToggleBtn.setAttribute('aria-label', 'Enable light mode');
+} else {
+  rootElement.setAttribute('data-theme', 'light');
+}
+
+themeToggleBtn.addEventListener('click', () => {
+  const currentTheme = rootElement.getAttribute('data-theme');
+  let newTheme = 'light';
+  let newAriaPressed = 'false';
+  let newAriaLabel = 'Enable dark mode';
+
+  if (currentTheme === 'light') {
+    newTheme = 'dark';
+    newAriaPressed = 'true';
+    newAriaLabel = 'Enable light mode';
+  }
+
+  rootElement.setAttribute('data-theme', newTheme);
+  themeToggleBtn.setAttribute('aria-pressed', newAriaPressed);
+  themeToggleBtn.setAttribute('aria-label', newAriaLabel);
+  localStorage.setItem('theme', newTheme);
+});
   </script>
 </body>
 </html>
